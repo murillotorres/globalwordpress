@@ -1,0 +1,165 @@
+[14-Mar-2025 02:11:22 UTC] PHP Warning:  Attempt to read property "title" on null in /home1/inove860/public_html/libertaglobal/wp-includes/class-wp-customize-widgets.php on line 923
+[14-Mar-2025 14:22:32 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(PARTITION BY post_id ORDER BY meta_id DESC) AS row_num
+                FROM wp_' at line 5 for query 
+        DELETE pm FROM wp_postmeta pm
+        JOIN (
+            SELECT post_id, meta_id FROM (
+                SELECT post_id, meta_id,
+                        ROW_NUMBER() OVER (PARTITION BY post_id ORDER BY meta_id DESC) AS row_num
+                FROM wp_postmeta
+                WHERE meta_key = 'inline_featured_image'
+            ) as duplicates
+            WHERE row_num > 1
+        ) to_delete ON pm.meta_id = to_delete.meta_id
+     made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, bodhi_svgs_version_updates, bodhi_svgs_cleanup_duplicate_meta
+[14-Mar-2025 15:49:49 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:49 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:50 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:50 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:51 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:51 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:52 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:52 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:54 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:54 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:55 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:55 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:57 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:49:57 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:00 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:00 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:02 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:02 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:03 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:03 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:04 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:04 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:05 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:05 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:06 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:06 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:07 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:07 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:07 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:07 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:08 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:08 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:10 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:10 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:11 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:11 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:11 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:11 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:12 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:12 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:13 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:13 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:13 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:13 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:14 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:14 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:15 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:15 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:15 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:15 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:16 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:16 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:17 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:17 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:18 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:18 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:18 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:18 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:19 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:19 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:20 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:20 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:22 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:22 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:24 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:24 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:25 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:25 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:26 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:26 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:27 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:27 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:27 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:27 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:28 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:28 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:29 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:29 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:30 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:30 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:31 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:31 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:32 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:32 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:32 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:32 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:33 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:33 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:34 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:34 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:34 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:34 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:35 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:35 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:36 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:36 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:37 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:37 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:37 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:37 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:38 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:38 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:39 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:39 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:39 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:39 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:40 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:40 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:41 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:41 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:41 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:41 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:42 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:42 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:43 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:43 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:44 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:44 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:44 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:44 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:45 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:45 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:46 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:46 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:48 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:48 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:49 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:49 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:49 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:49 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:50 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:50 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:51 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:51 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:52 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:52 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:53 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:50:53 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:58:53 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:58:54 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:58:54 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:58:54 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 15:58:54 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 16:13:19 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 16:13:20 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 16:17:22 UTC] PHP Warning:  Attempt to read property "title" on null in /home1/inove860/public_html/libertaglobal/wp-includes/class-wp-customize-widgets.php on line 923
+[14-Mar-2025 16:25:15 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 16:25:16 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 16:25:16 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 16:25:16 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
+[14-Mar-2025 16:25:16 UTC] Directory does not exist or is outside restricted basedir. input:/etc/apache2/htdocs
